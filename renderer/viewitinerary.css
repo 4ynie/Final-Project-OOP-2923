@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Consolas, "Courier New", monospace;
+  background-color: #f4f4f4;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 70px; 
+}
+
+.menubar {
+  width: 100%;
+  background-color: #FFFF8A;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 10;
+}
+
+.menubar a {
+  color: #99112C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.menubar a:hover {
+  background-color: #99112C;
+  color: white;
+}
+
+.menubar a.active {
+  background-color: #99112C;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  margin-top: 30px; 
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#itinerary-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.itinerary-card {
+  background: #99112C;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  text-align: left;
+  width: 100%;
+  color: #FFFF8A;
+}
+
+.itinerary-card h3 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #FFFF8A;
+}
+
+.update-btn,
+.delete-btn,
+.save-update-btn,
+.cancel-update-btn {
+  background-color: #FFFF8A;
+  color: #99112C;
+  border: 1px solid #FFFF8A;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.update-btn:hover,
+.delete-btn:hover,
+.save-update-btn:hover,
+.cancel-update-btn:hover {
+  background-color: #99112C;
+  color: #FFFF8A;
+  border: 3px solid #FFFF8A;
+}
+
+.form-container textarea {
+  width: 95%;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #FFFF8A;
+  background-color: #fdfdfd;
+  padding: 10px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 14px;
+  color: #99112C;
+  resize: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.form-container textarea:focus {
+  outline: none;
+  border-color: #99112C;
+  background-color: #fffde6;
+}
+.form-container input[type="text"],
+.form-container input[type="date"] {
+  width: 95%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #FFFF8A;
+  font-family: Consolas, "Courier New", monospace;
+  color: #99112C;
+  background-color: #fffdfd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #99112C;
+  background-color: #fffde6;
+}
+
+.empty {
+  color: #FFFFFF;       
+  font-size: 18px;      
+  font-weight: bold;    
+  text-align: center;   
+  margin-top: 40px;     
+}
+
+
+

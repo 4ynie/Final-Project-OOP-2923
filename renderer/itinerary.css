@@ -1,0 +1,126 @@
+
+body {
+  margin: 0;
+  font-family: Consolas, "Courier New", monospace;
+  background-color: #f4f4f4;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.menubar {
+  width: 100%;
+  background-color: #FFFF8A;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;           
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 10;
+}
+
+.menubar a {
+  color: #99112C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.menubar a:hover {
+  background-color: #99112C;
+  color: white;
+}
+
+.menubar a.active {
+  background-color: #99112C;
+  color: white;
+}
+
+
+h1 {
+  color: white;
+  font-weight: bold;
+  margin-top: 100px; 
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+  background: #99112C;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #FFFF8A;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Consolas, "Courier New", monospace;
+  box-sizing: border-box;
+  bo
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFFF8A;
+  color: #99112C;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #99112C;
+  color: #FFFF8A;
+  border: 3px solid #FFFF8A;
+}
+
+#message {
+  color: #99112C;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}

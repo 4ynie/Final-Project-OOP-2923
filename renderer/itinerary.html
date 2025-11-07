@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Itinerary</title>
+  <link rel="stylesheet" href="itinerary.css" />
+</head>
+
+<body>
+
+  <div class="menubar">
+    <a id="homeBtn">Home</a>
+    <a id="menuCreateBtn">Create Itinerary</a>
+    <a id="menuViewBtn">View Itinerary</a>
+  </div>
+
+  <h1 id="title">Create Your Itinerary! ✈️🗺️</h1>
+
+  <div class="form-container">
+    <label>Country:</label><br>
+    <input type="text" id="countryInput" placeholder="Enter country name"><br><br>
+
+    <label>Select Arrival Date:</label><br>
+    <input type="date" id="arrivalDate"><br><br>
+
+    <label>Select Departure Date:</label><br>
+    <input type="date" id="departureDate"><br><br>
+
+    <label>Budget Estimation (RM):</label><br>
+    <input type="text" id="budgetInput" placeholder="Enter your budget"><br><br>
+
+    <label>Your plan:</label><br>
+    <textarea id="planInput" rows="5" placeholder="Write your itinerary..."></textarea><br><br>
+
+    <button id="saveBtn">Save</button>
+  </div>
+
+  <script src="itinerary.js"></script>
+</body>
+</html>
