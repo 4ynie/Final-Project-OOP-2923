@@ -1,0 +1,14 @@
+{
+  "name": "world-explorer",
+  "version": "1.0.0",
+  "description": "World Explorer Electron app using RestCountries API and JSON itinerary storage",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}
